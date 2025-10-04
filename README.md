@@ -1,4 +1,3 @@
-# First
 
 ## Spotify Songs Analysis Project
 This project explores a large Spotify songs dataset to analyze various music features using Python and Jupyter Notebook. It is designed to help beginners learn how to perform exploratory data analysis (EDA) and feature engineering on music data.

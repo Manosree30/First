@@ -1,62 +1,60 @@
 # First
-EDA and feature engineering of spotify songs list
-## Name Dataset Analysis Project
-This project performs exploratory data analysis (EDA) and feature engineering on a dataset of names and IDs using Python and Jupyter Notebook. It's designed for beginners interested in learning data analysis step-by-step.
+
+## Spotify Songs Analysis Project
+This project explores a large Spotify songs dataset to analyze various music features using Python and Jupyter Notebook. It is designed to help beginners learn how to perform exploratory data analysis (EDA) and feature engineering on music data.
 
 ## Repo Structure
-# text
-project_task/
-  ├─ project_task.ipynb        # Main notebook for loading data and analysis
-  ├─ contentseparatednames.csv # Dataset file with IDs and FirstNames
-  ├─ requirements.txt          # Python package dependencies
+spotify_songs_analysis/
+  ├─ Spotify_Project.ipynb     # Main notebook with data loading, cleaning, and analysis
+  ├─ contentgenresv2.csv       # Spotify songs dataset with audio features & metadata
+  ├─ requirements.txt          # Python dependencies for the project
   └─ README.md                 # This file
+
 ## Prerequisites
-Python 3.9+ recommended.
-Required Python libraries:
-        pandas, numpy, matplotlib.
+Python 3.9+ recommended
+Packages: pandas, numpy, matplotlib, seaborn
 
-## Setup
-Clone the repo.
+## Setup Instructions
+Clone the repository to your local machine.
 
-## Create and activate a Python virtual environment :
+## Create a virtual environment :
 
-# text
+
 python -m venv .venv
-.\.venv\Scripts\activate           # Windows
-source .venv/bin/activate          # Linux/macOS
+.\.venv\Scripts\activate     # On Windows
+source .venv/bin/activate    # On macOS/Linux
+
+## Install dependencies:
 pip install --upgrade pip
 pip install -r requirements.txt
 
-## Launch the Notebook
-Install Jupyter if not already installed:
-# text
+## Launching the Notebook
+Make sure Jupyter is installed:
+
+
 pip install jupyter
-Start Jupyter Notebook:
-# text
+Start Jupyter Lab or Notebook:
+
 jupyter notebook
-Open project_task.ipynb and run all cells sequentially.
+Open Spotify_Project.ipynb and run the cells sequentially.
 
-## What the Notebook Does
-Loads a CSV file containing 100 rows of IDs and FirstNames.
-Inspects data: views the first few rows, checks data types, missing values, and duplicate records.
+## What This Notebook Does
 
-## Creates new features:
+Loads over 42,000 Spotify songs with features like danceability, energy, loudness, tempo, and genre.
+Cleans and preprocesses the data by dropping irrelevant columns and handling missing values.
+Performs summary statistics and visualizes distributions for key audio attributes.
+Groups and compares songs by genre, exploring differences in musical properties.
+Conducts feature engineering to create meaningful insights from raw data.
+Uses Python libraries such as pandas for data handling and seaborn/matplotlib for visualization.
 
-Flags names that start with a vowel.
-Calculates the length of each name.
-Categorizes IDs into quartiles for grouping and analysis.
-Provides summary statistics like most common names, ID range, and name length distributions.
-Visualizes data to show trends and insights about the dataset.
-
-## Results Highlights
-Dataset has 100 entries and 3 columns: ID (int), FirstName (string).
-Found 28 unique names, with "Sophia" being the most frequent.
-Name lengths range from 2 to 7 characters.
-About 17% names start with a vowel.
-IDs range from 11314 to 95807.
+## Highlights and Insights
+Dataset includes 14 main audio features describing song attributes.
+Explores feature distributions such as danceability scores and loudness levels.
+Investigates music genres including techno, hardstyle, dark trap, and more.
+Visualizes trends with histograms, box plots, and correlation heatmaps.
+Provides a strong foundation for beginners to practice real-world data analysis.
 
 ## Tips for Beginners
-If a cell doesn't show output, re-run it to regenerate tables and graphs.
-Comments in the notebook explain each step and code snippet for easy understanding.
-To add more Python packages, update requirements.txt.
-
+Restart and run all cells for a clean execution and visualization results.
+Each step is commented for easy understanding of data operations and transformations.
+Update requirements.txt if additional packages are used.
